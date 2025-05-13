@@ -3,7 +3,7 @@ import {products} from '../data/products.js';
 
 const today = dayjs();
 const deliveryDate = today.add(7, 'days');
-console.log(deliveryDate);
+console.log(deliveryDate.format('dddd, MMMM D'));
 
 let cartSummaryHTML = '';
 
