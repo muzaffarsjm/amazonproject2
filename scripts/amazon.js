@@ -1,4 +1,4 @@
-import {cart} from '../data/cart.js';
+import {cart, saveToStorage} from '../data/cart.js';
 import {products} from '../data/products.js';
 
 
@@ -83,6 +83,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) =>{
       //quantity: 1
       quantity: parseInt(productsAdded) 
      }); 
+     saveToStorage();
     };
 
     let cartQuantity = 0;
